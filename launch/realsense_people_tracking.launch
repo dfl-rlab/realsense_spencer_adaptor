@@ -13,7 +13,7 @@
   
   <!-- Front-facing d455 camera for person tracking : calibrate w.r.t. laser -->
 
-  <node pkg="tf" type="static_transform_publisher" name="base_link_front_d55_broadcaster" args="0.51 0 0.54  0.707 0  0.707 0 /base_link /rgbd_front_top_link 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_link_front_d55_broadcaster" args="0.51 0 0.54 0 0 0 /base_link /rgbd_front_top_link 100"/>
 
   <include file="$(find ugv_follow_me)/launch/tracking_single_rgbd_sensor.launch">
     <arg name="load_driver" value="false"/>
